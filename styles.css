@@ -1,0 +1,196 @@
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+    background-color: #000000;
+}
+
+header {
+    background-color: #111111;
+    padding: 20px 0;
+    border-bottom: 1px solid #333333;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #007bff;
+    text-decoration: underline;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    color: #ffffff;
+}
+
+header p {
+    font-size: 1.2em;
+    color: #cccccc;
+}
+
+.banner {
+    background: url('banner.jpg') no-repeat center center/cover;
+    padding: 80px 20px;
+    text-align: center;
+    color: #ffffff;
+    animation: slideIn 1s ease-out;
+}
+
+.banner h1 {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+}
+
+.banner p {
+    font-size: 1.5em;
+    margin-top: 0;
+}
+
+section {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+h2 {
+    font-size: 2.5em;
+    color: #ffffff;
+    border-bottom: 2px solid #333333;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.featured-books, .about, .latest-titles, .faqs, .customer-reviews, .contact {
+    background: #222222;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    margin-bottom: 20px;
+    opacity: 0;
+    animation: fadeIn 1s ease-in forwards;
+}
+
+.testimonial {
+    background: #333333;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.testimonial p {
+    margin: 0;
+}
+
+.contact form {
+    background: #333333;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    display: grid;
+    gap: 10px;
+    opacity: 0;
+    animation: fadeIn 1s ease-in forwards;
+}
+
+.contact label {
+    font-size: 1em;
+    color: #ffffff;
+}
+
+.contact input, .contact textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #555555;
+    border-radius: 4px;
+    font-size: 1em;
+    background-color: #222222;
+    color: #ffffff;
+}
+
+.contact input::placeholder, .contact textarea::placeholder {
+    color: #888888;
+}
+
+.contact button {
+    padding: 12px 20px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+.contact button:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    background-color: #111111;
+    border-top: 1px solid #333333;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9em;
+    color: #cccccc;
+}
+
+footer a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
